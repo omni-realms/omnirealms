@@ -1,300 +1,258 @@
-# OmniRealms: Full Specification & Architecture
+# OmniRealms Framework
 
-This document provides a **comprehensive specification** for the OmniRealms project—a large-scale, modular Java 23 game framework designed to support multiple "realms," procedurally generated worlds, advanced AI, and a robust financial system leveraging blockchain-based microtransactions. It outlines the **modules**, **package structures**, **core interfaces/classes**, **service architecture**, and **extensibility** considerations.
+A modular Java 23 game framework leveraging jMonkeyEngine for 3D rendering, supporting procedurally generated worlds, AI integration, and blockchain-based economies.
 
 ## Table of Contents
+1. [System Overview](#system-overview)
+2. [Architecture](#architecture)
+3. [Technical Stack](#technical-stack)
+4. [Module Details](#module-details)
+5. [Integration Points](#integration-points)
+6. [Development Guide](#development-guide)
 
-1. [Introduction & Goals](#introduction--goals)
-2. [Overall Architecture](#overall-architecture)
-3. [JPMS & Maven Structure](#jpms--maven-structure)
-4. [Module Overview](#module-overview)
-   - [1. omnirealms-parent (BOM + Aggregator)](#1-omnirealms-parent-bom--aggregator)
-   - [2. omnirealms-core-model](#2-omnirealms-core-model)
-   - [3. omnirealms-core-worldgen](#3-omnirealms-core-worldgen)
-   - [4. omnirealms-core-backend](#4-omnirealms-core-backend)
-   - [5. omnirealms-services-api & omnirealms-services-impl](#5-omnirealms-services-api--omnirealms-services-impl)
-   - [6. omnirealms-account-api & omnirealms-account-impl](#6-omnirealms-account-api--omnirealms-account-impl)
-   - [7. omnirealms-financial-api & omnirealms-financial-impl](#7-omnirealms-financial-api--omnirealms-financial-impl)
-   - [8. omnirealms-ai-api & omnirealms-ai-impl](#8-omnirealms-ai-api--omnirealms-ai-impl)
-   - [9. omnirealms-client-engine](#9-omnirealms-client-engine)
-   - [10. omnirealms-client-ui](#10-omnirealms-client-ui)
-   - [11. omnirealms-editor (Optional)](#11-omnirealms-editor-optional)
-5. [Detailed Package Structures & Key Classes](#detailed-package-structures--key-classes)
-6. [Service Loader Approach](#service-loader-approach)
-7. [Blockchain-Based Financial System](#blockchain-based-financial-system)
-8. [AI Integration](#ai-integration)
-9. [Realm/Mod/Editor Tools](#realmmodeditor-tools)
-10. [Conclusion & Next Steps](#conclusion--next-steps)
+## System Overview
 
-## Introduction & Goals
+### Core Features
+* Procedural world generation spanning multiple scales (cosmic to microscopic)
+* Server-authoritative architecture with multiplayer support
+* jMonkeyEngine-based rendering with multiple visual styles
+* Hierarchical account management with verification levels
+* Blockchain-based financial system
+* AI-driven NPCs and system management
+* Comprehensive modding support
 
-OmniRealms is a **multi-module** Java 23 project, aiming to provide:
+### Design Goals
+* Modular architecture using Java Platform Module System (JPMS)
+* Clear separation between client and server components
+* Extensible plugin system for mods and realms
+* Scalable multiplayer infrastructure
+* Secure blockchain integration
+* AI-first approach to game systems
 
-* **Procedural & Scalable Worlds**
-  * Chunk-based 3D environments that can represent planets, galaxies, microscopic realms, and more
-* **Multiple Rendering Styles & Client**
-  * A client engine capable of realistic 3D, cartoonish, or isometric rendering via LWJGL
-* **Server-Side Authority**
-  * A backend module that handles persistence, advanced logic, and optional multiplayer support
-* **Hierarchical Account System**
-  * Parent/child accounts, tutor/monitor, verified/unverified, with user profiles and permissions
-* **Blockchain-Based Microtransactions**
-  * Payment channels, escrow, and smart contracts for in-game economies
-* **AI Integration**
-  * AI players/objects, arbitration for contract disputes, tutoring, or monitoring systems
-* **Modding & Realm Editing Tools**
-  * A realm editor or mod tools for creating and customizing worlds, blocks, biomes, and more
+## Architecture
 
-## Overall Architecture
+### Layer Structure
+1. **Core Layer**
+   * Domain models
+   * World generation
+   * Physics simulation
+   * Event system
 
-OmniRealms employs a **layered** approach:
+2. **Service Layer**
+   * Account management
+   * Financial transactions
+   * AI services
+   * World persistence
 
-1. **Core Model (Domain Objects)** – Shared between client and server
-2. **Backend Logic** – Authoritative game logic, persistence, data management
-3. **Services (API & Impl)** – Defines interfaces for cross-module communication
-4. **Accounts & Financial** – Specialized modules handling user accounts and blockchain transactions
-5. **AI** – For NPC behavior, contract arbitration, content generation, or tutoring
-6. **Client Engine & UI** – LWJGL-based rendering, UI overlays, input, and game loop
-7. **Editor Tools** – (Optional) Tools for realm creation, block editing, or modding
+3. **Client Layer**
+   * jMonkeyEngine integration
+   * UI components
+   * Input handling
+   * Asset management
 
-## JPMS & Maven Structure
+4. **Server Layer**
+   * Game logic
+   * World state management
+   * Multiplayer synchronization
+   * Data persistence
 
-### JPMS
-Each module has a `module-info.java`, declaring `exports`, `requires`, and `provides`/`uses` for service loading.
-
-### Maven Structure
-A single **`omnirealms-parent`** POM acts as both a **BOM** and an **aggregator**. Example directory:
-
+### Module Organization
 ```
 omnirealms-parent/
-├── pom.xml
-├── omnirealms-core-model/
-├── omnirealms-core-worldgen/
-├── omnirealms-core-backend/
-├── omnirealms-services-api/
-├── omnirealms-services-impl/
-├── omnirealms-account-api/
-├── omnirealms-account-impl/
-├── omnirealms-financial-api/
-├── omnirealms-financial-impl/
-├── omnirealms-ai-api/
-├── omnirealms-ai-impl/
-├── omnirealms-client-engine/
-├── omnirealms-client-ui/
-└── omnirealms-editor/
+├── core/
+│   ├── model/           # Domain objects
+│   ├── physics/         # Physics engine integration
+│   ├── worldgen/        # Procedural generation
+│   └── event/           # Event system
+├── services/
+│   ├── account/         # Account management
+│   ├── financial/       # Blockchain integration
+│   ├── ai/             # AI systems
+│   └── persistence/     # Data storage
+├── client/
+│   ├── jme/            # jMonkeyEngine integration
+│   ├── ui/             # User interface
+│   ├── input/          # Input handling
+│   └── assets/         # Resource management
+└── server/
+    ├── logic/          # Game rules
+    ├── world/          # World management
+    ├── network/        # Multiplayer
+    └── persistence/    # Data storage
 ```
 
-## Module Overview
+## Technical Stack
 
-### 1. omnirealms-parent (BOM + Aggregator)
+### Core Technologies
+* Java 23
+* jMonkeyEngine 3.6
+* Maven 3.9+
+* JPMS (Java Platform Module System)
 
-* **Role**
-  * Manages versions for LWJGL, JUnit, etc.
-  * Defines plugin management (compiler, surefire)
-  * Aggregates all submodules under `<modules>`
-* No Java code in this module
+### Backend Infrastructure
+* PostgreSQL 16
+* Redis for caching
+* gRPC for network communication
+* Protocol Buffers for serialization
 
-### 2. omnirealms-core-model
+### Blockchain Integration
+* Hyperledger Fabric
+* Payment Channels
+* Smart Contracts
 
-* **Purpose**
-  * Shared domain objects and interfaces
-  * `Realm`, `World`, `Chunk`, `Block`, `Gateway`, `PlayerProfile`, `Vessel`
-* No client-rendering or server-specific code
-* Referenced by both client and server logic
+### AI Framework
+* TensorFlow Java
+* Deep Learning4J
+* OpenAI GPT Integration
 
-### 3. omnirealms-core-worldgen
-
-* **Purpose**
-  * Procedural generation: noise maps, terrain generation, erosion systems
-* Depends on `omnirealms-core-model` to manipulate world/chunk data
-
-### 4. omnirealms-core-backend
-
-* **Purpose**
-  * Server-side or backend logic: chunk persistence, realm management
-* References domain objects in `core-model`
-* May reference `core-worldgen` for server-side generation
-
-### 5. omnirealms-services-api & omnirealms-services-impl
-
-* **API**
-  * Defines service interfaces for cross-module functionality
-  * Uses domain objects from `core-model`
-* **Impl**
-  * Implements interfaces with `Local` or `Remote` providers
-  * Declares service providers in `module-info.java`
-
-### 6. omnirealms-account-api & omnirealms-account-impl
-
-* **Purpose**
-  * Handle account management—parent/child relationships, verification levels
-* **API**
-  * Interfaces: `AccountService`, `VerificationService`
-  * Domain classes: `Account`, `SubAccount`, `VerificationLevel`
-* **Impl**
-  * `LocalAccountService` (offline) or `RemoteAccountService`
-
-### 7. omnirealms-financial-api & omnirealms-financial-impl
-
-* **Purpose**
-  * Blockchain-based microtransactions, escrow, smart contracts
-* **API**
-  * Interfaces: `FinancialService`, `TransactionService`, `EscrowService`
-  * Domain classes: `Transaction`, `EscrowContract`, `TaxInfo`
-* **Impl**
-  * Multiple providers: `LocalFinancialService`, `HyperledgerFinancialService`
-
-### 8. omnirealms-ai-api & omnirealms-ai-impl
-
-* **Purpose**
-  * Integrate AI: NPC controllers, arbitration, tutoring
-* **API**
-  * Interfaces: `AIPlayerController`, `AIArbitrationService`, `AITutorService`
-* **Impl**
-  * `LocalAIPlayerController`, `GptArbitrationService`, `NeuralTutorService`
-
-### 9. omnirealms-client-engine
-
-* **Purpose**
-  * LWJGL rendering, multiple cameras, chunk meshing, game loop
-* Depends on `core-model` for domain data
-* Implements different rendering styles
-
-### 10. omnirealms-client-ui
-
-* **Purpose**
-  * User interface, 2D menus, HUD overlays, input handling
-* Depends on `client-engine` for rendering context
-
-### 11. omnirealms-editor (Optional)
-
-* **Purpose**
-  * Tools for realm or mod editing: chunk/block painting
-* May rely on `client-engine` for 3D visualization
-
-## Detailed Package Structures & Key Classes
+## Module Details
 
 ### Core Model
 ```java
-com.novaforge.omnirealms.core.model
-    .realm     // Realm, World, Chunk
-    .world     // Block, GameObject
-    .player    // PlayerProfile, Vessel
-    .objects   // Various game objects
-```
-
-### Backend
-```java
-com.novaforge.omnirealms.core.backend
-    .persistence   // ChunkManager, RealmManager
-    .serverlogic   // BackendGameLoop
-    .manager      // Various managers
-```
-
-### Services
-```java
-com.novaforge.omnirealms.services
-    .realm     // RealmService
-    .player    // PlayerService
-    .chunk     // ChunkService
-```
-
-### Client
-```java
-com.novaforge.omnirealms.client
-    .engine    // RenderEngine, Camera
-    .ui        // MainMenu, HUDOverlay
-    .input     // InputManager
-```
-
-## Service Loader Approach
-
-### API Example
-```java
-// In services-api
-public interface RealmService {
-    Realm getRealmById(String realmId);
-    void saveRealm(Realm realm);
-}
-
-module com.novaforge.omnirealms.services.api {
-    exports com.novaforge.omnirealms.services.realm;
+module com.novaforge.omnirealms.core.model {
+    exports com.novaforge.omnirealms.core.model.world;
+    exports com.novaforge.omnirealms.core.model.entity;
+    exports com.novaforge.omnirealms.core.model.physics;
+    
+    requires com.jme3.core;
+    requires org.tensorflow;
 }
 ```
 
-### Implementation Example
+### Client Engine
 ```java
-// In services-impl
-public class LocalRealmService implements RealmService {
-    public Realm getRealmById(String realmId) {
-        // Implementation
+module com.novaforge.omnirealms.client.engine {
+    requires com.jme3.core;
+    requires com.jme3.effects;
+    requires com.jme3.terrain;
+    
+    exports com.novaforge.omnirealms.client.engine.render;
+    exports com.novaforge.omnirealms.client.engine.scene;
+}
+```
+
+### JME Integration
+* Custom terrain system
+* Material management
+* Post-processing pipeline
+* Physics integration
+* Particle systems
+* Custom shaders
+
+```java
+public class TerrainSystem extends AbstractAppState {
+    private TerrainQuad terrain;
+    private Material terrainMaterial;
+    private PhysicsSpace physicsSpace;
+    
+    @Override
+    public void initialize(AppStateManager stateManager, Application app) {
+        super.initialize(stateManager, app);
+        initializeTerrain();
+        setupPhysics();
+        configureShaders();
+    }
+    
+    private void initializeTerrain() {
+        // Terrain initialization code
     }
 }
+```
 
-module com.novaforge.omnirealms.services.impl {
-    provides RealmService with LocalRealmService;
+## Integration Points
+
+### jMonkeyEngine Integration
+* Custom terrain system using TerrainQuad
+* Material system for multiple visual styles
+* Physics integration with Bullet
+* Custom shaders and post-processing
+* Asset pipeline integration
+
+### Blockchain System
+* Smart contract templates
+* Payment channel implementation
+* Transaction verification
+* Asset tokenization
+* Marketplace integration
+
+### AI Systems
+* NPC behavior trees
+* Pathfinding optimization
+* Decision making systems
+* Natural language processing
+* Learning algorithms
+
+## Development Guide
+
+### Setup
+```bash
+# Clone repository
+git clone https://github.com/yourusername/omnirealms.git
+
+# Build with Maven
+cd omnirealms
+mvn clean install
+
+# Run development server
+./gradlew server:run
+
+# Run client
+./gradlew client:run
+```
+
+### Creating a New Realm
+```java
+public class CustomRealm extends BaseRealm {
+    @Override
+    public void initialize() {
+        // Realm initialization
+        setWorldGenerator(new CustomWorldGenerator());
+        setPhysicsSpace(new BulletPhysicsSpace());
+        initializeServices();
+    }
+    
+    @Override
+    public void update(float tpf) {
+        // Update logic
+    }
 }
 ```
 
-## Blockchain-Based Financial System
+### Adding Custom Content
+* Create new models in Blender
+* Export using OgreXML format
+* Add material definitions
+* Implement custom shaders
+* Create content descriptors
 
-* **Core Features**
-  * Payment channels for microtransactions
-  * Smart contracts for escrow and bounties
-  * Multiple blockchain provider support
-  * Tax and revenue splitting
+### Testing
+```bash
+# Run unit tests
+mvn test
 
-* **Implementation Strategy**
-  * Local testing provider
-  * Production blockchain integration
-  * Off-chain transaction batching
-  * On-chain settlement
+# Run integration tests
+mvn verify
 
-## AI Integration
+# Generate test coverage
+mvn jacoco:report
+```
 
-### Core Systems
-* NPC behavior controllers
-* Contract arbitration
-* Tutoring and monitoring
-* Content generation
+### Optimization Guidelines
+* Use spatial partitioning
+* Implement LOD systems
+* Optimize shader performance
+* Use instancing for similar objects
+* Implement culling systems
 
-### Implementation Options
-* Rule-based local AI
-* External ML framework integration
-* LLM-powered interactions
+### Security Considerations
+* Input validation
+* Anti-cheat measures
+* Secure communication
+* Transaction verification
+* Access control
 
-## Realm/Mod/Editor Tools
+## License
+This project is licensed under the MIT License - see [LICENSE.md](LICENSE.md) for details.
 
-### Features
-* Block and chunk editing
-* Realm import/export
-* Real-time preview
-* Permission management
-
-### Integration
-* Client engine visualization
-* Account system permissions
-* World generation tools
-
-## Conclusion & Next Steps
-
-This modular specification provides a scalable foundation for OmniRealms with:
-
-* **Separation of Concerns**
-  * Core model for domain objects
-  * Backend for server logic
-  * Services for abstraction
-  * AI and financial systems
-
-* **Flexibility via ServiceLoader**
-  * Local or remote implementations
-  * Seamless service discovery
-
-* **Next Steps**
-  1. Implement core interfaces
-  2. Establish test coverage
-  3. Prototype service patterns
-  4. Develop AI components
-  5. Create basic editor interface
-
-This architecture ensures OmniRealms remains organized, extensible, and maintainable as new features are added.
+## Contributing
+See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
