@@ -1,84 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
                              https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+    <modelVersion>4.0.0</modelVersion>
   
-  <groupId>com.novaforge.omnirealms</groupId>
-  <artifactId>omnirealms-parent</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
-  <packaging>pom</packaging>
+    <groupId>com.novaforge.omnirealms</groupId>
+    <artifactId>omnirealms-parent</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
-  <name>OmniRealms Parent (BOM + Aggregator)</name>
-  <description>Parent POM managing all OmniRealms modules</description>
+    <name>OmniRealms Parent (BOM + Aggregator)</name>
+    <description>Parent POM managing all OmniRealms modules</description>
 
-  <!-- Central place for dependency/plugin management & aggregator build -->
-  <properties>
-    <!-- Example properties -->
-    <maven.compiler.source>23</maven.compiler.source>
-    <maven.compiler.target>23</maven.compiler.target>
-    <lwjgl.version>3.3.1</lwjgl.version>
-    <junit.jupiter.version>5.9.2</junit.jupiter.version>
-  </properties>
+    <properties>
+        <maven.compiler.source>23</maven.compiler.source>
+        <maven.compiler.target>23</maven.compiler.target>
+        <lwjgl.version>3.3.1</lwjgl.version>
+        <junit.jupiter.version>5.9.2</junit.jupiter.version>
+    </properties>
 
-  <!-- BOM / Dependency Management -->
-  <dependencyManagement>
+    <!-- Common dependencies for all modules -->
     <dependencies>
-      <!-- LWJGL BOM or direct definitions -->
-      <dependency>
-        <groupId>org.lwjgl</groupId>
-        <artifactId>lwjgl-bom</artifactId>
-        <version>${lwjgl.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-      <!-- JUnit Jupiter -->
-      <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter</artifactId>
-        <version>${junit.jupiter.version}</version>
-        <type>pom</type>
-        <scope>test</scope>
-      </dependency>
-      <!-- Any other shared dependencies here -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>${junit.jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
-  </dependencyManagement>
 
-  <build>
-    <pluginManagement>
-      <plugins>
-        <!-- Compiler Plugin -->
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.11.0</version>
-          <configuration>
-            <release>23</release>
-            <!-- or <source>23</source> / <target>23</target> -->
-          </configuration>
-        </plugin>
-        <!-- Surefire for tests, Failsafe for integration tests, etc. -->
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-surefire-plugin</artifactId>
-          <version>3.0.0-M7</version>
-          <configuration>
-            <useModulePath>true</useModulePath>
-          </configuration>
-        </plugin>
-      </plugins>
-    </pluginManagement>
-  </build>
+    <!-- BOM / Dependency Management -->
+    <dependencyManagement>
+        <dependencies>
+            <!-- LWJGL BOM -->
+            <dependency>
+                <groupId>org.lwjgl</groupId>
+                <artifactId>lwjgl-bom</artifactId>
+                <version>${lwjgl.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!-- Any other shared dependency versions here -->
+        </dependencies>
+    </dependencyManagement>
 
-  <!-- Now we also act as an aggregator for submodules -->
-  <modules>
-    <module>../omnirealms-core-model</module>
-    <module>../omnirealms-core-worldgen</module>
-    <module>../omnirealms-core-backend</module>
-    <module>../omnirealms-services-api</module>
-    <module>../omnirealms-services-impl</module>
-    <module>../omnirealms-client-engine</module>
-    <module>../omnirealms-client-ui</module>
-  </modules>
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.11.0</version>
+                    <configuration>
+                        <release>23</release>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>3.0.0-M7</version>
+                    <configuration>
+                        <useModulePath>true</useModulePath>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+    <!-- Modules -->
+    <modules>
+        <module>../core-auth</module>
+        <module>../core-model</module>
+        <module>../core-physics</module>
+        <module>../core-worldgen</module>
+        <module>../core-event</module>
+        <module>../services-education</module>
+        <module>../services-financial</module>
+        <module>../services-security</module>
+        <module>../services-jobs</module>
+        <module>../services-ai</module>
+        <module>../client-jme</module>
+        <module>../client-render</module>
+        <module>../client-ui</module>
+        <module>../client-assets</module>
+        <module>../server-logic</module>
+        <module>../server-world</module>
+        <module>../server-network</module>
+        <module>../server-persistence</module>
+    </modules>
 
 </project>
