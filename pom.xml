@@ -16,8 +16,8 @@
     <properties>
         <maven.compiler.source>23</maven.compiler.source>
         <maven.compiler.target>23</maven.compiler.target>
-        <lwjgl.version>3.3.1</lwjgl.version>
         <junit.jupiter.version>5.9.2</junit.jupiter.version>
+        <jme.version>3.6.1-stable</jme.version>
     </properties>
 
     <!-- Common dependencies for all modules -->
@@ -28,22 +28,8 @@
             <version>${junit.jupiter.version}</version>
             <scope>test</scope>
         </dependency>
+        
     </dependencies>
-
-    <!-- BOM / Dependency Management -->
-    <dependencyManagement>
-        <dependencies>
-            <!-- LWJGL BOM -->
-            <dependency>
-                <groupId>org.lwjgl</groupId>
-                <artifactId>lwjgl-bom</artifactId>
-                <version>${lwjgl.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            <!-- Any other shared dependency versions here -->
-        </dependencies>
-    </dependencyManagement>
 
     <build>
         <pluginManagement>
@@ -71,7 +57,7 @@
     <!-- Modules -->
     <modules>
         <module>../core-auth</module>
-        <module>../core-model</module>
+        <module>../core-api</module>
         <module>../core-physics</module>
         <module>../core-worldgen</module>
         <module>../core-event</module>
@@ -89,5 +75,4 @@
         <module>../server-network</module>
         <module>../server-persistence</module>
     </modules>
-
 </project>

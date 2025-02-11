@@ -60,7 +60,7 @@ Below is a reference list of sub-games available under the **OmniRealms** framew
 
 ---
 
-## Multiverse Forge
-- **Module Name:** `omnirealms-game-multiverseforge`
-- **Java Package:** `com.novaforge.omnirealms.games.multiverseforge`
-- **Description:** A sandbox builder empowering players to shape entire worlds. Inspired by the classic block-building genre, this title emphasizes collaborative construction, resource gathering, and world-editing tools—allowing players to channel **Titanic** creation abilities for unlimited creativity.
+## Ricochet Nexus
+- **Module Name:** `omnirealms-game-richochet`
+- **Java Package:** `com.novaforge.omnirealms.games.ricochet`
+- **Description:** A social-action simulation where players engage with the "Ricochet" app - a **Titan**-powered gig economy platform that matches users with missions based on their experience level and skills. Players start with simple tasks and gradually unlock higher-tier opportunities, building their reputation from Level 1 to 30. Each player adopts a unique handle (like "Nkl-n-D1med" or "Ashes2Ashes") and navigates a complex web of procedurally generated missions ranging from mundane courier jobs to high-stakes corporate infiltration. The game features a dual economy where players balance regular work with Ricochet contracts, each affecting their standing in both worlds. The **Realms**' influence manifests through a mysterious AI system that seems to have its own agenda, using the platform to orchestrate elaborate scenarios across the city. Features dynamic mission generation, branching narratives, and a robust reputation system where actions in one mission cascade into future opportunities.
