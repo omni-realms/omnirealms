@@ -123,7 +123,6 @@ Here is the **GitHub Markdown** version of your **OmniRealms Sales & Revenue Pro
 
 ## 📈 Summary  
 
-```md
 | Game Title                  | Low-End Revenue | High-End Revenue | Market Cap Estimate |
 |-----------------------------|----------------|------------------|---------------------|
 | **Cosmoria Tales**          | $150M          | $450M            | ~$2B               |
@@ -135,7 +134,6 @@ Here is the **GitHub Markdown** version of your **OmniRealms Sales & Revenue Pro
 | **Tactical Imperium**       | $120M          | $360M            | ~$800M             |
 | **Paragon Spheres**         | $20M           | $90M             | ~$300M             |
 | **Ricochet Nexus**          | $200M          | $1B              | ~$3B               |
-```
 
 **Total Market Cap Estimate:** **$12B+**  
 **Projected Revenue Range:** **$2.5B - $8.5B**
