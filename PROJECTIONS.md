@@ -83,18 +83,18 @@
 
 | Game Title                  | Low-End Revenue | High-End Revenue | Market Cap Estimate |
 |-----------------------------|----------------|------------------|---------------------|
-| **Cosmoria Tales**          | 💵 $150M       | 💰 $450M         | 🏦 ~$2B            |
-| **Frontiers of Mythic Dominion** | 💰 $600M   | 💰 $1.5B         | 💎 ~$3B            |
-| **Ascendant Racers**        | 💵 $40M        | 💰 $200M         | 🚗 ~$500M          |
-| **Chronoverse Legends**     | 💰 $300M       | 💰 $900M         | ⚔️ ~$2B            |
-| **Eternum Nexus**           | 💰 $480M       | 💰 $1.2B         | 🚀 ~$3B            |
-| **Celestial Safari**        | 💵 $100M       | 💰 $500M         | 🌍 ~$1.5B          |
-| **Tactical Imperium**       | 💵 $120M       | 💰 $360M         | 🛡 ~$800M          |
-| **Paragon Spheres**         | 💵 $20M        | 💰 $90M          | 🎮 ~$300M          |
-| **Ricochet Nexus**          | 💰 $200M       | 💰 $1B           | 💼 ~$3B            |
+| **Cosmoria Tales**          | $150M       | $450M         | ~$2B            |
+| **Frontiers of Mythic Dominion** | $600M   | $1.5B         | ~$3B            |
+| **Ascendant Racers**        | $40M        | $200M         | ~$500M          |
+| **Chronoverse Legends**     | $300M       | $900M         | ~$2B            |
+| **Eternum Nexus**           | $480M       | $1.2B         | ~$3B            |
+| **Celestial Safari**        | $100M       | $500M         | ~$1.5B          |
+| **Tactical Imperium**       | $120M       | $360M         | ~$800M          |
+| **Paragon Spheres**         | $20M        | $90M          | ~$300M          |
+| **Ricochet Nexus**          | $200M       | $1B           | ~$3B            |
 
-**Total Market Cap Estimate:** **💎 $12B+**  
-**Projected Revenue Range:** **💰 $2.5B - $8.5B**
+**Total Market Cap Estimate:** ** $12B+**  
+**Projected Revenue Range:** **$2.5B - $8.5B**
 
 🚀 The **OmniRealms** universe has MASSIVE potential! 🔥
 
