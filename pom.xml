@@ -59,7 +59,7 @@
         <module>../core-auth</module>
         <module>../core-api</module>
         <module>../core-physics</module>
-        <module>../core-worldgen</module>
+        <module>../core-world</module>
         <module>../core-event</module>
         <module>../services-education</module>
         <module>../services-financial</module>

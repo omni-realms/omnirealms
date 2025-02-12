@@ -1,0 +1,1 @@
+ME: generate Claude prompt so we can continue generating in next session. Include a terse listing off all of the modules, packages, java classes and methods generated so far so we have good starting point on the next prompt.
