@@ -1,0 +1,377 @@
+     0 Mon Oct 21 16:56:52 EDT 2024 META-INF/
+   173 Mon Oct 21 16:56:52 EDT 2024 META-INF/MANIFEST.MF
+     0 Mon Oct 21 16:56:50 EDT 2024 Interface/
+     0 Mon Oct 21 16:56:50 EDT 2024 Interface/Nifty/
+   954 Mon Oct 21 16:56:50 EDT 2024 Interface/Nifty/HelloJme.xml
+   419 Mon Oct 21 16:56:50 EDT 2024 Interface/Nifty/CinematicTest.xml
+     0 Mon Oct 21 16:56:50 EDT 2024 Interface/Joystick/
+ 21469 Mon Oct 21 16:56:50 EDT 2024 Interface/Joystick/gamepad-buttons.png
+  3116 Mon Oct 21 16:56:50 EDT 2024 Interface/Joystick/gamepad-stick.png
+ 63750 Mon Oct 21 16:56:50 EDT 2024 Interface/Joystick/gamepad-frame.png
+     0 Mon Oct 21 16:56:50 EDT 2024 Interface/Logo/
+114815 Mon Oct 21 16:56:50 EDT 2024 Interface/Logo/Monkey.png
+ 63561 Mon Oct 21 16:56:50 EDT 2024 Interface/Logo/Monkey.jpg
+  2348 Mon Oct 21 16:56:50 EDT 2024 Interface/Logo/Cursor.png
+   137 Mon Oct 21 16:56:50 EDT 2024 Interface/Logo/Logo.j3m
+     0 Mon Oct 21 16:56:50 EDT 2024 Interface/icons/
+ 28878 Mon Oct 21 16:56:50 EDT 2024 Interface/icons/SmartMonkey128.png
+ 69055 Mon Oct 21 16:56:50 EDT 2024 Interface/icons/SmartMonkey256.png
+  5333 Mon Oct 21 16:56:50 EDT 2024 Interface/icons/SmartMonkey32.png
+  3603 Mon Oct 21 16:56:50 EDT 2024 Interface/icons/SmartMonkey16.png
+     0 Mon Oct 21 16:56:50 EDT 2024 Textures/
+     0 Mon Oct 21 16:56:50 EDT 2024 Textures/dds/
+262272 Mon Oct 21 16:56:50 EDT 2024 Textures/dds/Monkey_PNG_BC5_S_6.DDS
+262272 Mon Oct 21 16:56:50 EDT 2024 Textures/dds/Monkey_PNG_BC3_10.DDS
+262272 Mon Oct 21 16:56:50 EDT 2024 Textures/dds/Monkey_PNG_BC5_7.DDS
+262292 Mon Oct 21 16:56:50 EDT 2024 Textures/dds/Monkey_PNG_BC6H_3.DDS
+131200 Mon Oct 21 16:56:50 EDT 2024 Textures/dds/Monkey_PNG_BC4_S_8.DDS
+131200 Mon Oct 21 16:56:50 EDT 2024 Textures/dds/Monkey_PNG_BC1_12.DDS
+262272 Mon Oct 21 16:56:50 EDT 2024 Textures/dds/Monkey_PNG_BC2_11.DDS
+131200 Mon Oct 21 16:56:50 EDT 2024 Textures/dds/Monkey_PNG_BC4_9.DDS
+262292 Mon Oct 21 16:56:50 EDT 2024 Textures/dds/Monkey_PNG_BC6H_SF_2.DDS
+262292 Mon Oct 21 16:56:50 EDT 2024 Textures/dds/Monkey_PNG_BC7_1.DDS
+     0 Mon Oct 21 16:56:50 EDT 2024 Textures/BumpMapTest/
+ 19791 Mon Oct 21 16:56:50 EDT 2024 Textures/BumpMapTest/Simple_height.png
+ 43307 Mon Oct 21 16:56:50 EDT 2024 Textures/BumpMapTest/Simple_normal.png
+   577 Mon Oct 21 16:56:50 EDT 2024 Textures/BumpMapTest/Tangent.png
+   365 Mon Oct 21 16:56:50 EDT 2024 Textures/BumpMapTest/SimpleBump.j3m
+   181 Mon Oct 21 16:56:50 EDT 2024 Textures/BumpMapTest/Tangent.j3m
+     0 Mon Oct 21 16:56:50 EDT 2024 Textures/Cursors/
+  4286 Mon Oct 21 16:56:50 EDT 2024 Textures/Cursors/meme.cur
+ 18292 Mon Oct 21 16:56:50 EDT 2024 Textures/Cursors/monkey.ani
+ 83024 Mon Oct 21 16:56:50 EDT 2024 Textures/Cursors/nyancat.ico
+     0 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/
+     0 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/Pond/
+500054 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/Pond/Pond_normal.png
+1398228 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/Pond/Pond.dds
+ 67010 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/Pond/Pond.jpg
+349680 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/Pond/Pond_dxt5.dds
+   375 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/Pond/Pond.j3m
+     0 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/Rock2/
+ 93344 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/Rock2/rock.jpg
+     0 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/Rock/
+168398 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/Rock/Rock_normal.png
+   231 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/Rock/Rock.j3m
+175648 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/Rock/Rock.PNG
+     0 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/BrickWall/
+ 71785 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/BrickWall/BrickWall_normal.jpg
+ 47146 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/BrickWall/BrickWall_height.jpg
+349652 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/BrickWall/BrickWall_normal_parallax.dds
+1398228 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/BrickWall/BrickWall.dds
+   348 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/BrickWall/BrickWall.j3m
+   314 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/BrickWall/BrickWallPBR2.j3m
+   349 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/BrickWall/BrickWallPBR.j3m
+349680 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/BrickWall/BrickWall_dxt5.dds
+178219 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/BrickWall/BrickWall.jpg
+     0 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/Rocky/
+   242 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/Rocky/Rocky.j3m
+516755 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/Rocky/RockyTexture.jpg
+291009 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/Rocky/RockyNormals.jpg
+     0 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/PBR/
+1703060 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/PBR/Snow006_1K_Displacement.png
+2007993 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/PBR/Gravel015_1K_AmbientOcclusion.png
+1741923 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/PBR/Tiles083_1K_Displacement.png
+1876343 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/PBR/Gravel015_1K_Roughness.png
+1968869 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/PBR/Tiles083_1K_Color.png
+6720668 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/PBR/Ground037_1K_Normal.png
+3090534 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/PBR/Ground037_1K_Color.png
+1982486 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/PBR/Marble013_1K_Displacement.png
+1998147 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/PBR/Ground036_PackedMetallicRoughnessMap.png
+1865764 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/PBR/Gravel015_1K_Displacement.png
+1513583 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/PBR/Ground037_1K_AmbientOcclusion.png
+1406527 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/PBR/Snow006_PackedMetallicRoughnessMap.png
+1941468 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/PBR/Tiles083_1K_AmbientOcclusion.png
+6583623 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/PBR/Gravel015_1K_Normal.png
+6719363 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/PBR/Ground036_1K_Normal.png
+6734190 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/PBR/Rock035_1K_Normal.png
+2433968 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/PBR/Rock035_1K_Color.png
+  1596 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/PBR/license.txt
+2290738 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/PBR/Marble013_1K_Color.png
+2034694 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/PBR/Gravel_015_PackedMetallicRoughnessMap.png
+1519932 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/PBR/Snow006_1K_AmbientOcclusion.png
+456620 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/PBR/Rock035_1K_Color.jpg
+1733791 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/PBR/Ground037_1K_Displacement.png
+1833740 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/PBR/Snow006_1K_Roughness.png
+941880 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/PBR/Snow006_1K_Color.png
+1849436 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/PBR/Marble013_1K_Roughness.png
+1835255 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/PBR/Rock035_1K_AmbientOcclusion.png
+1648892 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/PBR/Marble013_PackedMetallicRoughnessMap.png
+6517508 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/PBR/Tiles083_1K_Normal.png
+2787070 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/PBR/Ground036_1K_Color.png
+1644389 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/PBR/Ground036_1K_Displacement.png
+1896936 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/PBR/Rock035_1K_Roughness.png
+1905174 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/PBR/Tiles083_1K_Roughness.png
+1548514 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/PBR/Rock035_1K_Displacement.png
+6381804 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/PBR/Snow006_1K_Normal.png
+1715500 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/PBR/Ground036_1K_AmbientOcclusion.png
+1760543 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/PBR/Rock035_PackedMetallicRoughnessMap.png
+2515867 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/PBR/Gravel015_1K_Color.png
+2000793 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/PBR/Ground036_1K_Roughness.png
+3558830 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/PBR/Marble013_1K_Normal.png
+1936683 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/PBR/Ground037_1K_Roughness.png
+2520626 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/PBR/Tiles083_PackedMetallicRoughnessMap.png
+1741867 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/PBR/Ground037_PackedMetallicRoughnessMap.png
+     0 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/splat/
+1156710 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/splat/alpha1.png
+139171 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/splat/fortress512.png
+  7730 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/splat/road.jpg
+267649 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/splat/alpha2.png
+112548 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/splat/dirt_normal.png
+212522 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/splat/grass_normal.jpg
+  5545 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/splat/alphamap2.png
+ 62534 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/splat/mountains512.png
+ 33666 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/splat/pools.png
+531085 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/splat/alphamap.png
+ 46572 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/splat/dirt.jpg
+  9007 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/splat/mountains128.png
+496426 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/splat/grass.jpg
+ 45746 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/splat/road_normal.png
+ 32593 Mon Oct 21 16:56:50 EDT 2024 Textures/Terrain/splat/mountains1024.jpg
+     0 Mon Oct 21 16:56:50 EDT 2024 Textures/ColorRamp/
+   161 Mon Oct 21 16:56:50 EDT 2024 Textures/ColorRamp/toon.png
+   239 Mon Oct 21 16:56:50 EDT 2024 Textures/ColorRamp/cloudy.png
+     0 Mon Oct 21 16:56:50 EDT 2024 Textures/3D/
+524416 Mon Oct 21 16:56:50 EDT 2024 Textures/3D/flame.dds
+     0 Mon Oct 21 16:56:50 EDT 2024 Textures/HdrTest/
+1343485 Mon Oct 21 16:56:50 EDT 2024 Textures/HdrTest/Memorial.hdr
+   149 Mon Oct 21 16:56:50 EDT 2024 Textures/HdrTest/Memorial.j3m
+     0 Mon Oct 21 16:56:50 EDT 2024 Textures/ktx/
+ 65604 Mon Oct 21 16:56:50 EDT 2024 Textures/ktx/rgba-reference.ktx
+786356 Mon Oct 21 16:56:50 EDT 2024 Textures/ktx/prefilteredMap.ktx
+ 49220 Mon Oct 21 16:56:50 EDT 2024 Textures/ktx/up-reference.ktx
+ 49220 Mon Oct 21 16:56:50 EDT 2024 Textures/ktx/rgb-amg-reference.ktx
+ 16480 Mon Oct 21 16:56:50 EDT 2024 Textures/ktx/rgb-mipmap-reference.ktx
+589920 Mon Oct 21 16:56:50 EDT 2024 Textures/ktx/irrMap.ktx
+ 49248 Mon Oct 21 16:56:50 EDT 2024 Textures/ktx/down-reference.ktx
+     0 Mon Oct 21 16:56:50 EDT 2024 Textures/Sky/
+     0 Mon Oct 21 16:56:50 EDT 2024 Textures/Sky/Bright/
+6291584 Mon Oct 21 16:56:50 EDT 2024 Textures/Sky/Bright/FullskiesBlueClear03.dds
+8388728 Mon Oct 21 16:56:50 EDT 2024 Textures/Sky/Bright/BrightSky.dds
+     0 Mon Oct 21 16:56:50 EDT 2024 Textures/Sky/Lagoon/
+184792 Mon Oct 21 16:56:50 EDT 2024 Textures/Sky/Lagoon/lagoon_south.jpg
+ 45791 Mon Oct 21 16:56:50 EDT 2024 Textures/Sky/Lagoon/lagoon_up.jpg
+   243 Mon Oct 21 16:56:50 EDT 2024 Textures/Sky/Lagoon/LICENSE.txt
+129265 Mon Oct 21 16:56:50 EDT 2024 Textures/Sky/Lagoon/lagoon_down.jpg
+120914 Mon Oct 21 16:56:50 EDT 2024 Textures/Sky/Lagoon/lagoon_east.jpg
+120196 Mon Oct 21 16:56:50 EDT 2024 Textures/Sky/Lagoon/lagoon_north.jpg
+181319 Mon Oct 21 16:56:50 EDT 2024 Textures/Sky/Lagoon/lagoon_west.jpg
+7509809 Mon Oct 21 16:56:50 EDT 2024 Textures/Sky/Path.hdr
+     0 Mon Oct 21 16:56:50 EDT 2024 Textures/Sky/St Peters/
+5405493 Mon Oct 21 16:56:50 EDT 2024 Textures/Sky/St Peters/StPeters.hdr
+262365 Mon Oct 21 16:56:50 EDT 2024 Textures/Sky/St Peters/StPeters.jpg
+     0 Mon Oct 21 16:56:50 EDT 2024 Textures/Sky/Earth/
+463087 Mon Oct 21 16:56:50 EDT 2024 Textures/Sky/Earth/Earth.jpg
+     0 Mon Oct 21 16:56:50 EDT 2024 Textures/ColoredTex/
+ 89871 Mon Oct 21 16:56:50 EDT 2024 Textures/ColoredTex/Monkey.png
+     0 Mon Oct 21 16:56:50 EDT 2024 Scenes/
+     0 Mon Oct 21 16:56:50 EDT 2024 Scenes/DotScene/
+   397 Mon Oct 21 16:56:50 EDT 2024 Scenes/DotScene/DotScene.scene
+3147038 Mon Oct 21 16:56:50 EDT 2024 Scenes/defaultProbe.j3o
+     0 Mon Oct 21 16:56:50 EDT 2024 Scenes/LightProbes/
+3146038 Mon Oct 21 16:56:50 EDT 2024 Scenes/LightProbes/quarry_Probe.j3o
+   499 Mon Oct 21 16:56:50 EDT 2024 Scenes/LightProbes/license.txt
+     0 Mon Oct 21 16:56:50 EDT 2024 Scenes/ManyLights/
+  9015 Mon Oct 21 16:56:50 EDT 2024 Scenes/ManyLights/Main.scene
+107932 Mon Oct 21 16:56:50 EDT 2024 Scenes/ManyLights/AO.jpg
+276183 Mon Oct 21 16:56:50 EDT 2024 Scenes/ManyLights/Grid.mesh.xml
+   389 Mon Oct 21 16:56:50 EDT 2024 Scenes/ManyLights/Main.material
+     0 Mon Oct 21 16:56:50 EDT 2024 Scenes/Beach/
+1572992 Mon Oct 21 16:56:50 EDT 2024 Scenes/Beach/FullskiesSunset0068.dds
+     0 Mon Oct 21 16:56:50 EDT 2024 Scenes/PBR/
+1830950 Mon Oct 21 16:56:50 EDT 2024 Scenes/PBR/spheres.j3o
+     0 Mon Oct 21 16:56:50 EDT 2024 Scenes/PBR/ref/
+ 38085 Mon Oct 21 16:56:50 EDT 2024 Scenes/PBR/ref/scene.gltf
+507936 Mon Oct 21 16:56:50 EDT 2024 Scenes/PBR/ref/scene.bin
+     0 Mon Oct 21 16:56:50 EDT 2024 Models/
+     0 Mon Oct 21 16:56:50 EDT 2024 Models/Teapot/
+   201 Mon Oct 21 16:56:50 EDT 2024 Models/Teapot/Teapot.mtl
+559568 Mon Oct 21 16:56:50 EDT 2024 Models/Teapot/Teapot.obj
+1965401 Mon Oct 21 16:56:50 EDT 2024 Models/Teapot/Teapot.mesh.xml
+     0 Mon Oct 21 16:56:50 EDT 2024 Models/Sign Post/
+250654 Mon Oct 21 16:56:50 EDT 2024 Models/Sign Post/Sign Post.jpg
+   447 Mon Oct 21 16:56:50 EDT 2024 Models/Sign Post/Sign Post.j3m
+   242 Mon Oct 21 16:56:50 EDT 2024 Models/Sign Post/Sign Post.material
+ 88606 Mon Oct 21 16:56:50 EDT 2024 Models/Sign Post/Sign Post_specular.jpg
+184483 Mon Oct 21 16:56:50 EDT 2024 Models/Sign Post/Sign Post_normal.jpg
+ 59345 Mon Oct 21 16:56:50 EDT 2024 Models/Sign Post/Sign Post.mesh.xml
+     0 Mon Oct 21 16:56:50 EDT 2024 Models/Terrain/
+4638149 Mon Oct 21 16:56:50 EDT 2024 Models/Terrain/Terrain.mesh.xml
+     0 Mon Oct 21 16:56:50 EDT 2024 Models/TangentBugs/
+589516 Mon Oct 21 16:56:50 EDT 2024 Models/TangentBugs/test_normal.png
+     0 Mon Oct 21 16:56:50 EDT 2024 Models/Boat/
+144350 Mon Oct 21 16:56:50 EDT 2024 Models/Boat/boat.mesh.xml
+ 32617 Mon Oct 21 16:56:50 EDT 2024 Models/Boat/boat.j3o
+1013281 Mon Oct 21 16:56:50 EDT 2024 Models/Boat/boat.png
+   185 Mon Oct 21 16:56:50 EDT 2024 Models/Boat/boat.j3m
+872538 Mon Oct 21 16:56:50 EDT 2024 Models/Boat/boat_normal.png
+     0 Mon Oct 21 16:56:50 EDT 2024 Models/WaterTest/
+290388 Mon Oct 21 16:56:50 EDT 2024 Models/WaterTest/WaterTest.mesh.xml
+     0 Mon Oct 21 16:56:50 EDT 2024 Models/Test/
+  1121 Mon Oct 21 16:56:50 EDT 2024 Models/Test/BasicCubeLow.obj
+2589079 Mon Oct 21 16:56:50 EDT 2024 Models/Test/Normal_pixel.png
+ 15311 Mon Oct 21 16:56:50 EDT 2024 Models/Test/CornellBox.j3o
+     0 Mon Oct 21 16:56:50 EDT 2024 Models/gltf/
+     0 Mon Oct 21 16:56:50 EDT 2024 Models/gltf/duck/
+  4964 Mon Oct 21 16:56:50 EDT 2024 Models/gltf/duck/Duck.gltf
+102040 Mon Oct 21 16:56:50 EDT 2024 Models/gltf/duck/Duck0.bin
+ 16302 Mon Oct 21 16:56:50 EDT 2024 Models/gltf/duck/DuckCM.png
+     0 Mon Oct 21 16:56:50 EDT 2024 Models/gltf/box/
+  2051 Mon Oct 21 16:56:50 EDT 2024 Models/gltf/box/box.gltf
+   648 Mon Oct 21 16:56:50 EDT 2024 Models/gltf/box/Box0.bin
+     0 Mon Oct 21 16:56:50 EDT 2024 Models/Buggy/
+123094 Mon Oct 21 16:56:50 EDT 2024 Models/Buggy/buggy_specular.jpg
+2944649 Mon Oct 21 16:56:50 EDT 2024 Models/Buggy/buggy_normals.png
+227088 Mon Oct 21 16:56:50 EDT 2024 Models/Buggy/Buggy.j3o
+ 22547 Mon Oct 21 16:56:50 EDT 2024 Models/Buggy/buggy_glow.jpg
+   465 Mon Oct 21 16:56:50 EDT 2024 Models/Buggy/Buggy.j3m
+192783 Mon Oct 21 16:56:50 EDT 2024 Models/Buggy/buggy_diffuse.jpg
+     0 Mon Oct 21 16:56:50 EDT 2024 Models/Ferrari/
+  1791 Mon Oct 21 16:56:50 EDT 2024 Models/Ferrari/Car.scene
+ 79101 Mon Oct 21 16:56:50 EDT 2024 Models/Ferrari/Car.jpg
+ 43397 Mon Oct 21 16:56:50 EDT 2024 Models/Ferrari/WheelFrontLeft.mesh.xml
+ 43149 Mon Oct 21 16:56:50 EDT 2024 Models/Ferrari/WheelFrontRight.mesh.xml
+ 42975 Mon Oct 21 16:56:50 EDT 2024 Models/Ferrari/WheelBackRight.mesh.xml
+196688 Mon Oct 21 16:56:50 EDT 2024 Models/Ferrari/Car.mesh.xml
+ 43223 Mon Oct 21 16:56:50 EDT 2024 Models/Ferrari/WheelBackLeft.mesh.xml
+   223 Mon Oct 21 16:56:50 EDT 2024 Models/Ferrari/Car.material
+     0 Mon Oct 21 16:56:50 EDT 2024 Models/Jaime/
+1338852 Mon Oct 21 16:56:50 EDT 2024 Models/Jaime/Jaime.j3o
+   602 Mon Oct 21 16:56:50 EDT 2024 Models/Jaime/Jaime.j3m
+168972 Mon Oct 21 16:56:50 EDT 2024 Models/Jaime/diffuseMap.jpg
+1386033 Mon Oct 21 16:56:50 EDT 2024 Models/Jaime/NormalMap.png
+     0 Mon Oct 21 16:56:50 EDT 2024 Models/Oto/
+158626 Mon Oct 21 16:56:50 EDT 2024 Models/Oto/Oto.jpg
+389275 Mon Oct 21 16:56:50 EDT 2024 Models/Oto/OtoOldAnim.j3o
+   227 Mon Oct 21 16:56:50 EDT 2024 Models/Oto/Oto.material
+346177 Mon Oct 21 16:56:50 EDT 2024 Models/Oto/Oto.skeleton.xml
+1412023 Mon Oct 21 16:56:50 EDT 2024 Models/Oto/Oto.mesh.xml
+   144 Mon Oct 21 16:56:50 EDT 2024 Models/Oto/Oto.j3m
+     0 Mon Oct 21 16:56:50 EDT 2024 Models/Sponza/
+9539478 Mon Oct 21 16:56:50 EDT 2024 Models/Sponza/Sponza.j3o
+     0 Mon Oct 21 16:56:50 EDT 2024 Models/Sinbad/
+   773 Mon Oct 21 16:56:50 EDT 2024 Models/Sinbad/README-LICENSE.txt
+5022962 Mon Oct 21 16:56:50 EDT 2024 Models/Sinbad/Sinbad.skeleton.xml
+ 53592 Mon Oct 21 16:56:50 EDT 2024 Models/Sinbad/sinbad_clothes.jpg
+ 55731 Mon Oct 21 16:56:50 EDT 2024 Models/Sinbad/sinbad_body.jpg
+842731 Mon Oct 21 16:56:50 EDT 2024 Models/Sinbad/SinbadOldAnim.j3o
+2091028 Mon Oct 21 16:56:50 EDT 2024 Models/Sinbad/Sinbad.mesh.xml
+   920 Mon Oct 21 16:56:50 EDT 2024 Models/Sinbad/Sword.material
+  1599 Mon Oct 21 16:56:50 EDT 2024 Models/Sinbad/Sinbad.material
+ 23390 Mon Oct 21 16:56:50 EDT 2024 Models/Sinbad/sinbad_sword.jpg
+119072 Mon Oct 21 16:56:50 EDT 2024 Models/Sinbad/Sword.mesh.xml
+     0 Mon Oct 21 16:56:50 EDT 2024 Models/Elephant/
+ 21296 Mon Oct 21 16:56:50 EDT 2024 Models/Elephant/ElephantEye.jpg
+ 66353 Mon Oct 21 16:56:50 EDT 2024 Models/Elephant/Elephant.skeleton.xml
+   930 Mon Oct 21 16:56:50 EDT 2024 Models/Elephant/Elephant.material
+   233 Mon Oct 21 16:56:50 EDT 2024 Models/Elephant/Elephant.j3m
+4086396 Mon Oct 21 16:56:50 EDT 2024 Models/Elephant/Elephant.mesh.xml
+106859 Mon Oct 21 16:56:50 EDT 2024 Models/Elephant/ElephantTusk.jpg
+115155 Mon Oct 21 16:56:50 EDT 2024 Models/Elephant/Elephant.jpg
+192058 Mon Oct 21 16:56:50 EDT 2024 Models/Elephant/Elephant_normal.jpg
+     0 Mon Oct 21 16:56:50 EDT 2024 Models/Tree/
+ 68484 Mon Oct 21 16:56:50 EDT 2024 Models/Tree/BarkColor.jpg
+273434 Mon Oct 21 16:56:50 EDT 2024 Models/Tree/BarkNormal.jpg
+   334 Mon Oct 21 16:56:50 EDT 2024 Models/Tree/Trunk.j3m
+1172839 Mon Oct 21 16:56:50 EDT 2024 Models/Tree/Tree.mesh.xml
+1042670 Mon Oct 21 16:56:50 EDT 2024 Models/Tree/Leaves.png
+144573 Mon Oct 21 16:56:50 EDT 2024 Models/Tree/Tree.mesh.j3o
+   456 Mon Oct 21 16:56:50 EDT 2024 Models/Tree/Leaves.j3m
+    73 Mon Oct 21 16:56:50 EDT 2024 Models/Tree/Tree.mesh.j3odata
+     0 Mon Oct 21 16:56:50 EDT 2024 Models/Ninja/
+   419 Mon Oct 21 16:56:50 EDT 2024 Models/Ninja/Ninja.material
+ 43726 Mon Oct 21 16:56:50 EDT 2024 Models/Ninja/Ninja.jpg
+401520 Mon Oct 21 16:56:50 EDT 2024 Models/Ninja/Ninja.mesh.xml
+632696 Mon Oct 21 16:56:50 EDT 2024 Models/Ninja/Ninja.skeleton.xml
+     0 Mon Oct 21 16:56:50 EDT 2024 Models/HoverTank/
+ 17992 Mon Oct 21 16:56:50 EDT 2024 Models/HoverTank/tank_glow_map.jpg
+4654864 Mon Oct 21 16:56:50 EDT 2024 Models/HoverTank/Tank2.mesh.xml
+   483 Mon Oct 21 16:56:50 EDT 2024 Models/HoverTank/tank.j3m
+984075 Mon Oct 21 16:56:50 EDT 2024 Models/HoverTank/tank_normals.png
+ 95998 Mon Oct 21 16:56:50 EDT 2024 Models/HoverTank/tank_specular.jpg
+225896 Mon Oct 21 16:56:50 EDT 2024 Models/HoverTank/tank_diffuse.jpg
+     0 Mon Oct 21 16:56:50 EDT 2024 Models/MonkeyHead/
+ 84209 Mon Oct 21 16:56:50 EDT 2024 Models/MonkeyHead/MonkeyHead_diffuse.jpg
+ 26509 Mon Oct 21 16:56:50 EDT 2024 Models/MonkeyHead/MonkeyHead_spec.jpg
+1622296 Mon Oct 21 16:56:50 EDT 2024 Models/MonkeyHead/MonkeyHead.mesh.xml
+   294 Mon Oct 21 16:56:50 EDT 2024 Models/MonkeyHead/MonkeyHead.j3m
+ 69875 Mon Oct 21 16:56:50 EDT 2024 Models/MonkeyHead/MonkeyHead_normal.jpg
+     0 Mon Oct 21 16:56:50 EDT 2024 Models/Tank/
+    68 Mon Oct 21 16:56:50 EDT 2024 Models/Tank/tank.j3odata
+ 91440 Mon Oct 21 16:56:50 EDT 2024 Models/Tank/Tank_Emissive.png
+324039 Mon Oct 21 16:56:50 EDT 2024 Models/Tank/tank.j3o
+   515 Mon Oct 21 16:56:50 EDT 2024 Models/Tank/tank.j3m
+12726822 Mon Oct 21 16:56:50 EDT 2024 Models/Tank/Tank_Normal.png
+5421309 Mon Oct 21 16:56:50 EDT 2024 Models/Tank/Tank_Occ_Rough_Metal.png
+3850117 Mon Oct 21 16:56:50 EDT 2024 Models/Tank/Tank_Base_Color.png
+     0 Mon Oct 21 16:56:50 EDT 2024 Models/SpaceCraft/
+ 11302 Mon Oct 21 16:56:50 EDT 2024 Models/SpaceCraft/Rocket.png
+   128 Mon Oct 21 16:56:50 EDT 2024 Models/SpaceCraft/Rocket.material
+ 44072 Mon Oct 21 16:56:50 EDT 2024 Models/SpaceCraft/Rocket.mesh.xml
+     0 Mon Oct 21 16:56:50 EDT 2024 OBJLoaderTest/
+  2767 Mon Oct 21 16:56:50 EDT 2024 OBJLoaderTest/TwoChairs.obj
+   260 Mon Oct 21 16:56:50 EDT 2024 OBJLoaderTest/TwoChairs.mtl
+   142 Mon Oct 21 16:56:50 EDT 2024 OBJLoaderTest/dot_green.png
+   143 Mon Oct 21 16:56:50 EDT 2024 OBJLoaderTest/dot_purple.png
+   143 Mon Oct 21 16:56:50 EDT 2024 OBJLoaderTest/dot_blue.png
+   142 Mon Oct 21 16:56:50 EDT 2024 OBJLoaderTest/dot_red.png
+     0 Mon Oct 21 16:56:50 EDT 2024 TerrainGrid/
+ 71632 Mon Oct 21 16:56:50 EDT 2024 TerrainGrid/testgrid_2_0_-3.j3o
+ 71632 Mon Oct 21 16:56:50 EDT 2024 TerrainGrid/testgrid_2_0_-2.j3o
+ 20746 Mon Oct 21 16:56:50 EDT 2024 TerrainGrid/testgrid_4_0_-1.j3o
+ 71612 Mon Oct 21 16:56:50 EDT 2024 TerrainGrid/testgrid_0_0_0.j3o
+ 20800 Mon Oct 21 16:56:50 EDT 2024 TerrainGrid/testgrid_3_0_-1.j3o
+ 71632 Mon Oct 21 16:56:50 EDT 2024 TerrainGrid/testgrid_1_0_-2.j3o
+ 71632 Mon Oct 21 16:56:50 EDT 2024 TerrainGrid/testgrid_1_0_-1.j3o
+ 71632 Mon Oct 21 16:56:50 EDT 2024 TerrainGrid/testgrid_3_0_-2.j3o
+ 71553 Mon Oct 21 16:56:50 EDT 2024 TerrainGrid/testgrid_4_0_-3.j3o
+ 71553 Mon Oct 21 16:56:50 EDT 2024 TerrainGrid/testgrid_0_0_-3.j3o
+ 71553 Mon Oct 21 16:56:50 EDT 2024 TerrainGrid/testgrid_2_0_-4.j3o
+ 71632 Mon Oct 21 16:56:50 EDT 2024 TerrainGrid/testgrid_0_0_-1.j3o
+  2603 Mon Oct 21 16:56:50 EDT 2024 TerrainGrid/TerrainGrid.j3o
+ 71632 Mon Oct 21 16:56:50 EDT 2024 TerrainGrid/testgrid_2_0_-1.j3o
+ 71632 Mon Oct 21 16:56:50 EDT 2024 TerrainGrid/testgrid_3_0_-3.j3o
+ 71548 Mon Oct 21 16:56:50 EDT 2024 TerrainGrid/testgrid_1_0_1.j3o
+ 71632 Mon Oct 21 16:56:50 EDT 2024 TerrainGrid/testgrid_0_0_-2.j3o
+ 71553 Mon Oct 21 16:56:50 EDT 2024 TerrainGrid/testgrid_3_0_-4.j3o
+ 71632 Mon Oct 21 16:56:50 EDT 2024 TerrainGrid/testgrid_4_0_-2.j3o
+ 71548 Mon Oct 21 16:56:50 EDT 2024 TerrainGrid/testgrid_2_0_0.j3o
+ 71627 Mon Oct 21 16:56:50 EDT 2024 TerrainGrid/testgrid_1_0_0.j3o
+ 71632 Mon Oct 21 16:56:50 EDT 2024 TerrainGrid/testgrid_1_0_-3.j3o
+ 20741 Mon Oct 21 16:56:50 EDT 2024 TerrainGrid/testgrid_3_0_0.j3o
+ 71548 Mon Oct 21 16:56:50 EDT 2024 TerrainGrid/testgrid_0_0_1.j3o
+     0 Mon Oct 21 16:56:50 EDT 2024 Effects/
+     0 Mon Oct 21 16:56:50 EDT 2024 Effects/Explosion/
+ 64630 Mon Oct 21 16:56:50 EDT 2024 Effects/Explosion/flash.png
+  1820 Mon Oct 21 16:56:50 EDT 2024 Effects/Explosion/spark.png
+  2057 Mon Oct 21 16:56:50 EDT 2024 Effects/Explosion/roundspark.png
+ 15831 Mon Oct 21 16:56:50 EDT 2024 Effects/Explosion/Debris.png
+ 33174 Mon Oct 21 16:56:50 EDT 2024 Effects/Explosion/smoketrail.png
+ 47227 Mon Oct 21 16:56:50 EDT 2024 Effects/Explosion/flame.png
+ 16543 Mon Oct 21 16:56:50 EDT 2024 Effects/Explosion/shockwave.png
+     0 Mon Oct 21 16:56:50 EDT 2024 Effects/Smoke/
+ 28261 Mon Oct 21 16:56:50 EDT 2024 Effects/Smoke/Smoke.png
+     0 Mon Oct 21 16:56:50 EDT 2024 Materials/
+     0 Mon Oct 21 16:56:50 EDT 2024 Materials/Geom/
+   123 Mon Oct 21 16:56:50 EDT 2024 Materials/Geom/SimpleGeom.vert
+    99 Mon Oct 21 16:56:50 EDT 2024 Materials/Geom/SimpleGeom.frag
+   536 Mon Oct 21 16:56:50 EDT 2024 Materials/Geom/SimpleGeom.geom
+   375 Mon Oct 21 16:56:50 EDT 2024 Materials/Geom/SimpleGeom.j3md
+    88 Mon Oct 21 16:56:50 EDT 2024 Materials/Geom/SimpleGeom.j3m
+     0 Mon Oct 21 16:56:50 EDT 2024 Materials/Tess/
+    88 Mon Oct 21 16:56:50 EDT 2024 Materials/Tess/SimpleTess.j3m
+   565 Mon Oct 21 16:56:50 EDT 2024 Materials/Tess/SimpleTess.tseval
+   547 Mon Oct 21 16:56:50 EDT 2024 Materials/Tess/SimpleTess.j3md
+   656 Mon Oct 21 16:56:50 EDT 2024 Materials/Tess/SimpleTess.tsctrl
+    99 Mon Oct 21 16:56:50 EDT 2024 Materials/Tess/SimpleTess.frag
+   123 Mon Oct 21 16:56:50 EDT 2024 Materials/Tess/SimpleTess.vert
+     0 Mon Oct 21 16:56:50 EDT 2024 Sound/
+     0 Mon Oct 21 16:56:50 EDT 2024 Sound/Environment/
+310957 Mon Oct 21 16:56:50 EDT 2024 Sound/Environment/Ocean Waves.ogg
+416186 Mon Oct 21 16:56:50 EDT 2024 Sound/Environment/River.ogg
+652383 Mon Oct 21 16:56:50 EDT 2024 Sound/Environment/Nature.ogg
+     0 Mon Oct 21 16:56:50 EDT 2024 Sound/Effects/
+ 23055 Mon Oct 21 16:56:50 EDT 2024 Sound/Effects/Foot steps.ogg
+  7030 Mon Oct 21 16:56:50 EDT 2024 Sound/Effects/Beep.ogg
+ 41576 Mon Oct 21 16:56:50 EDT 2024 Sound/Effects/Gun.wav
+ 73004 Mon Oct 21 16:56:50 EDT 2024 Sound/Effects/Bang.wav
+ 73310 Mon Oct 21 16:56:50 EDT 2024 Sound/Effects/kick.wav

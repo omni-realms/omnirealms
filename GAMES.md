@@ -4,6 +4,13 @@ Below is a reference list of sub-games available under the **OmniRealms** framew
 
 ---
 
+## OmniRealm Forge
+- **Module Name:** `omnirealms-game-forge`
+- **Java Package:** `com.omnirealms.games.forge`
+- **Description:** A voxel-based building and exploration game where players shape vast worlds using 1x1x1 blocks. Players can craft items, build structures, and explore procedurally generated realms. The game features a robust modding system and serves as a foundational platform for accessing other OmniRealms worlds through its unique block-based perspective. Through special portals or crafted devices, players can view and interact with the same realm data that other games access, but rendered in the Forge's voxel style.
+
+---
+
 ## Cosmoria Tales
 - **Module Name:** `omnirealms-game-cosmoriatales`
 - **Java Package:** `com.novaforge.omnirealms.games.cosmoriatales`
