@@ -29,6 +29,8 @@
         <jackson.version>2.16.0</jackson.version>
         <guice.version>7.0.0</guice.version>
         <jme.version>3.7.0-stable</jme.version>
+        <jme.bullet.version>3.3.2-stable</jme.bullet.version>
+        <jme.plugins.version>3.3.2-stable</jme.plugins.version>
     </properties>
 
     <dependencyManagement>
@@ -178,10 +180,36 @@
             </dependency>
             <dependency>
                 <groupId>org.jmonkeyengine</groupId>
+                <artifactId>jme3-testdata</artifactId>
+                <version>${jme.version}</version>
+                <scope>runtime</scope> <!-- Optional: only needed at runtime -->
+            </dependency>
+            <dependency>
+                <groupId>org.jmonkeyengine</groupId>
                 <artifactId>jme3-lwjgl3</artifactId>
                 <version>${jme.version}</version>
             </dependency>
-            
+            <dependency>
+			    <groupId>org.jmonkeyengine</groupId>
+			    <artifactId>jme3-bullet</artifactId>
+                <version>${jme.bullet.version}</version>
+			</dependency>
+			<dependency>
+		        <groupId>org.jmonkeyengine</groupId>
+		        <artifactId>jme3-bullet-native</artifactId>
+                <version>${jme.bullet.version}</version>
+                <scope>runtime</scope> <!-- Optional: only needed at runtime -->
+		    </dependency>
+		    <dependency>
+			    <groupId>org.jmonkeyengine</groupId>
+			    <artifactId>jme3-plugins</artifactId>
+                <version>${jme.version}</version>
+			</dependency>
+		    <dependency>
+			    <groupId>org.jmonkeyengine</groupId>
+			    <artifactId>jme3-jogg</artifactId>
+                <version>${jme.version}</version>
+			</dependency>
             <!-- Database -->
             <dependency>
                 <groupId>org.postgresql</groupId>
@@ -259,6 +287,6 @@
         <module>../omnirealms-network</module>
         <module>../omnirealms-server-session</module>
         <module>../omnirealms-game-client</module>
-        <module>../omnirealms-game-forge-client</module>
+<!--        <module>../omnirealms-game-forge-client</module>-->
     </modules>
 </project>
