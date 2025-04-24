@@ -285,8 +285,8 @@
     <modules>
         <module>../omnirealms-core</module>
         <module>../omnirealms-network</module>
-        <module>../omnirealms-server-session</module>
         <module>../omnirealms-game-client</module>
+<!--        <module>../omnirealms-server-session</module>-->
 <!--        <module>../omnirealms-game-forge-client</module>-->
     </modules>
 </project>
